@@ -1,5 +1,7 @@
 const express = require('express');
 
+const PORT = 333
+
 const athletesRoute = require('./routes/athletes');
 const clubResultsRoute = require('./routes/clubResults');
 const resultsRoute = require('./routes/results');
@@ -19,6 +21,6 @@ app.get('/', (req, res) => {
     });
 })
   
-app.listen(process.env.PORT || 333, function() {
+app.listen(process.env.PORT || PORT, function() {
   console.log('yo 3 my mans')
 })
