@@ -1,7 +1,7 @@
 const { Router } = require('express');
 
 const results = require('../test.json')
-const db = require('../database');
+// const db = require('../database');
 
 const router = Router();
 
