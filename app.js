@@ -19,6 +19,6 @@ app.get('/', (req, res) => {
     });
 })
   
-app.listen(333, () => {
+app.listen(process.env.PORT || 333, function() {
   console.log('yo 3 my mans')
 })
